@@ -37,7 +37,7 @@ Page class
 test case
 Add testcase in testngxml file
 (generateemailid using StringUtils)
-
-
 we want run the failed testcase  -->go to test-outputfolder-->it have the testng-failed.xml file 
 we using the testng-failed.xml at the time.(may failed cases correct it and also run)
+
+2 step is exections 
