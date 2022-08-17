@@ -1,0 +1,43 @@
+1:Implementation
+================
+1.Create Maven Project
+2.Update pom.xml(update dependencies)
+after create folderStructure in projectLevel(configuration,report,screenshots)
+3.Create Page Objects
+create page object  class for login screen
+4.Create Basic Test case(beforeClass(borwser setup)and commonfuction(Screenshot and randomString) afterClass(tearsdown))
+create base class(under testcase package)
+create login test(under testcase package)
+5.Add logs to test case
+st1;log4j.jar(dependencies)
+st2;log4j.properties
+6.Read common values from properties file
+st1;config.properties(put all the variables along with values)(configurationFolder)
+config.properites ./ it represent the project home directory;
+st2;Readconfig.java(simple java class it read configfile values and provide the values to baseclass)(utilityPackage)
+7.Run test case on desired browser
+st1;Modify the baseclass(implement the parameters annotation pass as argument browser(@parameters("browser") and us if and else )
+st2;creat xml file in projectLevel
+8.Add extent report
+( add jar dependencies)
+1.extent -config.xml(Project home dir)(configurationfile)
+2.Listener(Reporting.java)--->utility file(create report,reporter and test)(add screenshot when test failed)
+3.add entry in Testng.xml file(add listeners tag with classname)
+9.create Data Driven test case
+Apche poi jar(dependencies)
+XLS file(test data)(Excelsheet.xlxs)(put under testdata package)
+XLUtils(creat class and write data dirven method)
+TestCase(creat testcase and extends BaseClass)
+@Dataprovider(create getdatamethod)
+create isAlertPresent method
+10.Adding new Test case
+New Testcases:
+-------------
+Page class
+test case
+Add testcase in testngxml file
+(generateemailid using StringUtils)
+
+
+we want run the failed testcase  -->go to test-outputfolder-->it have the testng-failed.xml file 
+we using the testng-failed.xml at the time.(may failed cases correct it and also run)
