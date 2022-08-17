@@ -41,3 +41,4 @@ we want run the failed testcase  -->go to test-outputfolder-->it have the testng
 we using the testng-failed.xml at the time.(may failed cases correct it and also run)
 
 2 step is exections 
+3 continuous integeration
